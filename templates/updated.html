@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %} <title>Uppfært</title> {% endblock %}
+
+{% block redir %}
+    <meta http-equiv="refresh"content="2; url={{ url_for('index') }}">
+{% endblock %}
+
+{% block content %}
+    <h2>Biffreiðin {{nr}} hefur verið uppfært</h2>
+
+{% endblock %}
